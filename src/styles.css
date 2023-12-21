@@ -2,6 +2,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Resetting default margin and padding for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents unwanted scrolling */
+  }
+  
+
 /* Animation for moving twinkling image to the left */
 @keyframes moveTwinkleLeft {
     0% {
@@ -28,5 +37,7 @@
 }
 
 .animate-move-clouds {
-    animation: moveCloudsRight 50s linear infinite; /* Adjust the duration as needed */
+    animation: moveCloudsRight 20s linear infinite; /* Adjust the duration as needed */
 }
+
+

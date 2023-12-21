@@ -1,15 +1,17 @@
-import ReactDOM from "react-dom"; // Correct the import statement
+import React from "react";
+import ReactDOM from "react-dom";
 import StarryNight from "./components/Stars";
+import Landing from "./components/landingPage"; // Import statement is correct
+import NavBar from "./components/NavBar";
 import "./styles.css";
 
-// serves as the root component of the application
 const App = () => {
-  return (
-    <div>
-      <StarryNight></StarryNight>
-    </div>
-  ) 
+  return  (
+    <StarryNight>
+      <NavBar />
+      <Landing />
+    </StarryNight>
+  )
 };
 
-// Render the app component using ReactDOM.render
 ReactDOM.render(<App />, document.getElementById("root"));
