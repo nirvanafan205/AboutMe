@@ -61,43 +61,44 @@ const landingPage = () => {
         </div>
       </nav>
 
-      {/* this will be the about me section*/}
-      <div className="grid grid-cols-3 gap-4 p-4 pt-9">
-        <div className="col-span-1"></div>
-        <div className="col-span-1">
+      {/* About me section */}
+
+      {/* Welcome section */}
+
+      {/* Main content section */}
+      <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-4 p-4 pt-9">
+        {/* Welcome section spans all columns */}
+        <div className="col-span-1 md:col-span-5">
           <h1 className="text-5xl font-semibold text-blue-500 text-center">
             Welcome
           </h1>
-          <p className="text-blue-500 text-center pt-3">
-            My name is <h2>Matthew Garcia</h2>
-          </p>
+          <h2 className="text-blue-500 text-center">
+            My name is Matthew Garcia
+          </h2>
         </div>
-        <div className="col-span-1"></div>
-      </div>
 
-      <div className="grid grid-cols-3 gap-4 p-4 pl-32">
-        <div className="col-span-1">
-          {/* Left Section */}
-          <p className="text-xl font-semibold text-white text-left pb-5">
-            Hello, I am a Fullstack Software Engineer!
-          </p>
-          <span className="text-pink-500 ">
-            As fullstack Software engineer, I have experience in Websitge,
-            Mobile, and Software development. Check out my projects and skills!
-          </span>
+        {/* Left Section */}
+        <div className="mt-6 md:mt-0 md:col-span-2 flex justify-start items-end md:pl-16 p-4">
+          <div>
+            <h2 className="text-xl font-semibold text-white">
+              Hello, I am a Fullstack Software Engineer!
+            </h2>
+            <p className="text-pink-500">
+              As a full-stack Software engineer, I have experience in Website,
+              Mobile, and Software development. Check out my projects and
+              skills!
+            </p>
+          </div>
         </div>
-        <div className="col-span-1"></div>
-        <div className="col-span-1"></div>
-      </div>
 
-      <div className="grid grid-cols-3 gap-4 p-4 pr-32">
+        {/* Empty middle cell for spacing */}
+        <div className="hidden md:block md:col-span-1"></div>
+
         {/* Right Section */}
-        <div className="col-span-1"></div>
-        <div className="col-span-1"></div>
-        <div className="col-span-1">
-          <p className="text-xl font-semibold text-blue-500 text-right">
-            Right
-          </p>
+        <div className="mt-6 md:mt-0 md:col-span-2 flex md:justify-end justify-center items-center p-4">
+          <div>
+            <p className="text-xl font-semibold text-indigo-500 pr-8 ">Right</p>
+          </div>
         </div>
       </div>
     </div>
