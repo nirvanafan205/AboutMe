@@ -1,6 +1,10 @@
 import React from "react";
+import SkillsSection from "./skillsSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTerminal, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTerminal,
+  faDollarSign,
+} from "@fortawesome/free-solid-svg-icons";
 import "./../styles.css";
 
 const landingPage = () => {
@@ -64,8 +68,6 @@ const landingPage = () => {
       {/* About me section */}
 
       {/* Welcome section */}
-
-      {/* Main content section */}
       <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-4 p-4 pt-9">
         {/* Welcome section spans all columns */}
         <div className="col-span-1 md:col-span-5">
@@ -80,7 +82,7 @@ const landingPage = () => {
         {/* Left Section */}
         <div className="mt-6 md:mt-0 md:col-span-2 flex justify-start items-end md:pl-16 p-4">
           <div>
-            <h2 className="text-xl font-semibold text-white">
+            <h2 className="text-xl font-semibold text-white pb-2">
               Hello, I am a Fullstack Software Engineer!
             </h2>
             <p className="text-pink-500">
@@ -101,6 +103,8 @@ const landingPage = () => {
           </div>
         </div>
       </div>
+
+      <SkillsSection />
     </div>
   );
 };
