@@ -1,6 +1,15 @@
+"use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDollarSign,
+  faPager,
+  faEarth,
+  faPaintbrush,
+  faOilCan,
+} from "@fortawesome/free-solid-svg-icons";
+import "swiper/css";
+
 
 const SkillsSection = () => {
   return (
@@ -15,23 +24,23 @@ const SkillsSection = () => {
         </div>
         {/* React */}
         <div>
-          <FontAwesomeIcon icon={faDollarSign} size="4x" />
+          <FontAwesomeIcon icon={faPager} size="4x" />
           <p className="mt-4">React</p>
         </div>
         {/* Java */}
         <div>
-          <FontAwesomeIcon icon={faDollarSign} size="4x" />
+          <FontAwesomeIcon icon={faEarth} size="4x" />
           <p className="mt-4">Java</p>
         </div>
         {/* JavaScript */}
         <div>
-          <FontAwesomeIcon icon={faDollarSign} size="4x" />
+          <FontAwesomeIcon icon={faPaintbrush} size="4x" />
           <p className="mt-4">JavaScript</p>
         </div>
         {/* Fifth Skill */}
         <div>
-          <FontAwesomeIcon icon={faDollarSign} size="4x" />
-          <p className="mt-4">Additional Skill</p>
+          <FontAwesomeIcon icon={faOilCan} size="4x" />
+          <p className="mt-4">Vim</p>
         </div>
       </div>
     </div>
